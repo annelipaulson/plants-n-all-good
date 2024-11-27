@@ -1,26 +1,15 @@
 <script setup>
-import PrimaryTemplate from "../Templates/PrimaryTemplate.vue";
-import Card from "components/.Card.vue";
-import Home from "components/.Home.vue" ;
-
-
+import PrimaryTemplate from "../Templates/PrimaryTemplate.vue"
 defineProps({
   plantName: {
-    type: String
-    required: true
+    type: String,
+    required: true,
   },
 plantCare: {
-    type: String
-    required: true}
-  },
-  plantRegion: {
-    type: String
-    required: true
-  },
-  plantLink: {
-    type: String
-    required: true,
-  }
+    type: String,
+    required: true,}
+
+
 })
 </script>
 
@@ -30,7 +19,6 @@ plantCare: {
       <aside>
         <p class="plantName">{{ plantName }}</p>
           <p class="plantCare">{{ plantCare }}</p>
-          <p class="plant-region">{{ plantRegion }}</p>
           <router-link to="/plant">Learn More!</router-link>
       </aside>
     </section>

@@ -1,10 +1,6 @@
 <script setup>
-import PrimaryTemplate from '../Templates/PrimaryTemplate.vue'
-import Card from '/.Card.vue'
-import Contact from '/.Contact.vue'
-import About from '.About.vue'
-import Plant from 'Plant.vue'
-import Home from 'Home.vue'
+import PrimaryTemplate from "../Templates/PrimaryTemplate.vue"
+import Card from "./Card.vue"
 </script>
 
 <template>

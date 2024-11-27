@@ -31,7 +31,7 @@ import PrimaryTemplate from "../Templates/PrimaryTemplate.vue";
    <br> <br><b>Our mission is simple: to make plant care accessible, enjoyable, and rewarding for everyone, whether you're a seasoned plant parent or just starting out.</b>
 
     <br><br>At Plants & All the, we believe that plants can bring warmth, beauty, and balance to any environment. Our team is here to provide expert tips, curated plant selections, and personalized care advice to help your plants thrive. From indoor jungles to low-maintenance succulents, we’ve got something for every lifestyle and space.
-   <br><br><b> Join us in growing a greener, more vibrant world—one plant at a time</b></br>
+   <br><br><b> Join us in growing a greener, more vibrant world—one plant at a time</b>
 
 
 
