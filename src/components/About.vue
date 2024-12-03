@@ -56,6 +56,8 @@ import PrimaryTemplate from "../Templates/PrimaryTemplate.vue";
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
+    padding-left: 8rem;
   }
   div.nav{
     display: flex;
@@ -87,7 +89,6 @@ import PrimaryTemplate from "../Templates/PrimaryTemplate.vue";
     align-items: center;
     background-color: sandybrown;
     margin-left: 10rem;
-    margin-right: 15rem;
     margin-top: 2rem;
     border: lightgrey solid 3px;
     border-radius: 10px;
@@ -98,7 +99,6 @@ import PrimaryTemplate from "../Templates/PrimaryTemplate.vue";
 
 
   div.about-content {
-    margin: 3rem;
     padding:3rem;
     display: flex;
     flex-direction: column;
@@ -108,7 +108,6 @@ import PrimaryTemplate from "../Templates/PrimaryTemplate.vue";
   div.about-content p{
     text-align: left;
     color: black;
-    margin: 30px;
     font-family: futura serif;
     font-size: 2rem;
   }
@@ -117,14 +116,12 @@ import PrimaryTemplate from "../Templates/PrimaryTemplate.vue";
 
 
 
-@media (width >= 800px) {
+@media (width >= 500px) {
 
   div.about-content {
     display: flex;
-    margin: 5rem;
     flex-direction: column;
     background-color: white;
-    padding: 40px;
     font-size: 2rem;
   }
 
@@ -132,6 +129,9 @@ import PrimaryTemplate from "../Templates/PrimaryTemplate.vue";
     display: flex;
     flex-direction: row;
     scale: 1;
+    padding-left:20rem;
+    gap:5rem;
+    padding-bottom:20px;
   }
 
 
@@ -172,8 +172,6 @@ import PrimaryTemplate from "../Templates/PrimaryTemplate.vue";
     flex-wrap: wrap;
     flex-direction: row;
     background-color: sandybrown;
-    margin-left: 10rem;
-    margin-right: 15rem;
     margin-top: 2rem;
     border: lightgrey solid 3px;
     border-radius: 10px;

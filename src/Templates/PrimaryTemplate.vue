@@ -18,13 +18,10 @@
 @media (width <=500px) {
 
   section.primary-template {
-    background-color: darkolivegreen;
     display: flex;
-    flex-wrap: nowrap;
     flex-direction: column;
-    width: 100%;
     font-family: "American Typewriter", serif;
-
+    background-color: darkolivegreen;
   }
   a {
     display: flex;
@@ -44,13 +41,13 @@
 
   section.main {
     align-items: center;
+    background-color: darkolivegreen;
   }
 
 
 }
   @media (width >500px){
     section.primary-template {
-      width: 100%;
       background-color: darkolivegreen;
       display: flex;
       flex-direction: row;
@@ -70,19 +67,13 @@
       font-size: 3rem;
       color: white;
     }
-
-    section.primary-template {
-      background-color: darkolivegreen;
-      display: flex;
-      flex-direction: row;
-      font-family: "American Typewriter", serif;
-
-    }
+    x
 
 
 
   section.main {
     align-items: center;
+      background-color: darkolivegreen;
   }
 
 

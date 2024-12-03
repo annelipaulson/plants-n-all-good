@@ -75,7 +75,6 @@ import PrimaryTemplate from "../Templates/PrimaryTemplate.vue";
     align-items: center;
     background-color: sandybrown;
     margin-left: 10rem;
-    margin-right: 15rem;
     margin-top: 2rem;
     border: lightgrey solid 3px;
     border-radius: 10px;
@@ -86,12 +85,9 @@ import PrimaryTemplate from "../Templates/PrimaryTemplate.vue";
 
 
   div.contact-content {
-    margin: 3rem;
-    padding:3rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background-color: white;
   }
 div.contact-content p{
   text-align: left;
@@ -108,7 +104,7 @@ div.contact-content p{
 @media (width >= 500px) {
   div.contact-content {
     display:flex;
-    margin:5rem;
+
     flex-direction: column;
     background-color: white;
     padding: 40px;
@@ -117,7 +113,8 @@ div.contact-content p{
   div.nav {
     display: flex;
     flex-direction: row;
-    scale:1;}
+    scale:1;
+    padding-left:10rem;}
 
 
   div.contact-content h3 {
@@ -160,7 +157,7 @@ div.contact-content p{
     flex-direction: row;
     background-color: sandybrown;
     margin-left: 10rem;
-    margin-right: 15rem;
+    margin-bottom:5rem;
     margin-top: 2rem;
     border: lightgrey solid 3px;
     border-radius: 10px;

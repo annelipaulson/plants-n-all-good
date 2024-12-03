@@ -51,7 +51,6 @@ import Card from "./Card.vue"
     flex-direction: column;
     align-items: center;
   }
-
   div.cards {
     display: flex;
     flex-direction: column;
@@ -90,7 +89,6 @@ import Card from "./Card.vue"
     display: flex;
     flex-wrap: nowrap;
     background-color: sandybrown;
-    margin-left: 3.5rem;
     margin-right: 15rem;
     margin-top: 2rem;
     border: lightgrey solid 3px;
@@ -111,12 +109,14 @@ import Card from "./Card.vue"
     flex-direction: row;
   }
 
-div.nav{
+div.nav {
   display: flex;
-  flex-direction:row;
-  gap: 1rem;
-  margin-bottom:10rem;
-}
+  flex-direction: row;
+  scale:1;
+  padding-left:15rem;
+gap: 5rem;
+padding-bottom: 5rem;}
+
 
   div.cards {
     display: flex;
@@ -136,8 +136,8 @@ div.nav{
     font-family: "American Typewriter", serif;
     font-size: 10rem;
     color: white;
-    margin-right: 200px;
-    margin-left: 20rem;
+
+
 
     aside {
       display: flex;
@@ -153,12 +153,9 @@ div.nav{
     background-color: sandybrown;
     border: lightgrey solid 3px;
     border-radius: 10px;
-    padding: 20px;
     font-size: 3rem;
     color: white;
-    margin-right:400px;
-    margin-left: 100px;
-    margin-bottom:2rem;
+    padding: 1.5rem;
   }
 
   a:hover {
