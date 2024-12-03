@@ -52,17 +52,19 @@ import PrimaryTemplate from "../Templates/PrimaryTemplate.vue";
 
 <style scoped>
 @media (width<= 500px) {
-  svg {
-    display: flex;
+  svg{
+    display:flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    padding-left: 8rem;
+    padding-left:130px;
+    padding-right:130px;
   }
   div.nav{
     display: flex;
     flex-direction:column;
     gap: 1rem;
+    padding-right:15rem;
+    padding-bottom:5rem;
   }
 
   h1 {
@@ -117,12 +119,19 @@ import PrimaryTemplate from "../Templates/PrimaryTemplate.vue";
 
 
 @media (width >= 500px) {
-
+  svg{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    padding-top: 5rem;
+    padding-left:30rem;
+    padding-bottom: 5rem;
+  }
   div.about-content {
     display: flex;
     flex-direction: column;
     background-color: white;
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
 
   div.nav {
@@ -130,6 +139,7 @@ import PrimaryTemplate from "../Templates/PrimaryTemplate.vue";
     flex-direction: row;
     scale: 1;
     padding-left:20rem;
+    padding-right:25rem;
     gap:5rem;
     padding-bottom:20px;
   }
@@ -151,19 +161,20 @@ import PrimaryTemplate from "../Templates/PrimaryTemplate.vue";
     background-color: white;
     font-family: futura sans-serif;
     color: black;
-    font-size: 3rem;
+    font-size: 1.5rem;
   }
 
   h1 {
     display: flex;
     text-align: center;
     padding-left: 150px;
+    padding-right: 20rem;
     border-bottom: lightgrey solid 3px;
     padding-top: 30px;
     flex-direction: row;
     justify-content: center;
     font-family: American typewriter, serif;
-    font-size: 5rem;
+    font-size: 2rem;
     color: white;
   }
 
@@ -176,7 +187,7 @@ import PrimaryTemplate from "../Templates/PrimaryTemplate.vue";
     border: lightgrey solid 3px;
     border-radius: 10px;
     padding: 20px;
-    font-size: 2rem;
+    font-size: 1.5rem;
     color: white;
     font-family: "American Typewriter", serif;
   }

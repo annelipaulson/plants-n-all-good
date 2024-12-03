@@ -46,10 +46,12 @@ import Card from "./Card.vue"
 <style scoped>
 
 @media (width <= 500px) {
-  svg {
-    display: flex;
+  svg{
+    display:flex;
     flex-direction: column;
     align-items: center;
+    padding-left:130px;
+    padding-right:130px;
   }
   div.cards {
     display: flex;
@@ -70,6 +72,7 @@ import Card from "./Card.vue"
     font-size: 3rem;
     color: white;
     margin-right: 200px;
+    padding-left:15rem;
 
     aside {
       display: flex;
@@ -82,6 +85,8 @@ import Card from "./Card.vue"
     display: flex;
     flex-direction:column;
     gap: 1rem;
+    padding-left:15rem;
+    padding-bottom:5rem;
   }
 
 
@@ -108,7 +113,13 @@ import Card from "./Card.vue"
     display: flex;
     flex-direction: row;
   }
-
+svg{
+  display:flex;
+  flex-direction: row;
+  align-items: center;
+  padding-bottom: 5rem;
+  padding-left: 30rem;
+}
 div.nav {
   display: flex;
   flex-direction: row;
