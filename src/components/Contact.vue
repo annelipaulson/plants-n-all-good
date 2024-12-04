@@ -88,9 +88,10 @@ import PrimaryTemplate from "../Templates/PrimaryTemplate.vue";
 
 
     <div class="nav">
+      <router-link to="/home">Home</router-link>
       <router-link to="/contact">Contact</router-link>
       <router-link to="/about">About</router-link>
-      <router-link to="/home">Home</router-link></div>
+      <router-link to="/funfacts">Fun Facts</router-link></div>
 </primary-template>
     <div class="contact-content">
       <h3>We're here to help you with all your plant-related needs! Whether you have questions about plant care, need help with an order, or want to give us feedback, our team at Plants & All the is ready to assist.</h3>
@@ -127,25 +128,18 @@ import PrimaryTemplate from "../Templates/PrimaryTemplate.vue";
     display:flex;
     flex-direction: column;
     align-items: center;
-    padding-left:130px;
-    padding-right:130px;
-  }
-  div.nav{
-    display: flex;
-    flex-direction:column;
-    gap: 1rem;
-    padding-right:10rem;
-    padding-bottom:5rem;
-
+    padding-left:150px;
   }
 
   h1 {
-    margin: 50px;
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
+    text-align: center;
     justify-content: center;
     font-family: "American Typewriter", serif;
-    font-size: 5rem;
+    font-size: 3rem;
+    color: white;
   }
 
   div.contact-content h3 {
@@ -153,16 +147,24 @@ import PrimaryTemplate from "../Templates/PrimaryTemplate.vue";
     flex-direction: column;
     justify-content: center;
     font-family: "American Typewriter", serif;
-    font-size: 3rem;
+    font-size: 1rem;
     color: black;
+  }
+
+  div.nav{
+    padding-top:5rem;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    padding-bottom: 5rem;
   }
 
   a {
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    flex-wrap: nowrap;
     background-color: sandybrown;
-    margin-left: 10rem;
     margin-top: 2rem;
     border: lightgrey solid 3px;
     border-radius: 10px;
@@ -171,20 +173,29 @@ import PrimaryTemplate from "../Templates/PrimaryTemplate.vue";
     color: white;
   }
 
+  a:hover {
+    color: green;
+  }
+}
 
-  div.contact-content {
+
+
+div.contact-content {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
+  padding:7rem;
+  background-color: white;
   }
 div.contact-content p{
   text-align: left;
   color: black;
-  margin: 30px;
+  margin: 15px;
   font-family: futura serif;
-  font-size: 2rem;
+  font-size: 1rem;
 }
-}
+
 
 
 
@@ -209,10 +220,11 @@ align-content: center;
   div.nav {
     display: flex;
     flex-direction: row;
-    scale:1;
-    gap: 5rem;
+    align-items: center;
+    justify-content: center;
+    padding-right:5rem;
     padding-bottom: 5rem;
-    align-content: center;}
+   }
 
   div.contact-content h3 {
     display: flex;

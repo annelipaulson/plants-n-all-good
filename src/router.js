@@ -3,6 +3,7 @@ import Home from "./components/Home.vue";
 import About from "./components/About.vue";
 import Contact from "./components/Contact.vue";
 import Plant from "./components/Plant.vue";
+import Funfacts from "./components/Funfacts.vue";
 
 const router = createRouter({
     history: createWebHistory(import.meta.env.BASE_URL),
@@ -23,7 +24,8 @@ const router = createRouter({
         {
             path: '/plant', name: 'plant', component: Plant
 
-        }
+        },
+        {path: '/funfacts', name:'funfacts', component: Funfacts}
 
     ]
 

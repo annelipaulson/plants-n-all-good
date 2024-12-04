@@ -23,21 +23,6 @@
     font-family: "American Typewriter", serif;
     background-color: darkolivegreen;
   }
-  a {
-    display: flex;
-    flex-wrap: nowrap;
-    background-color: sandybrown;
-    margin-left: 3.5rem;
-    margin-right: 15rem;
-    margin-top: 2rem;
-    border: lightgrey solid 3px;
-    border-radius: 10px;
-    padding: 20px;
-    font-size: 1rem;
-    color: white;
-  }
-
-
 
   section.main {
     align-items: center;
@@ -54,20 +39,7 @@
       font-family: "American Typewriter", serif;
 
     }
-    a {
-      display: flex;
-      flex-wrap: nowrap;
-      background-color: sandybrown;
-      margin-left: 3.5rem;
-      margin-right: 15rem;
-      margin-top: 2rem;
-      border: lightgrey solid 3px;
-      border-radius: 10px;
-      padding: 20px;
-      font-size: 3rem;
-      color: white;
-    }
-    x
+
 
 
 

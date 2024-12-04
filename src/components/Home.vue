@@ -18,9 +18,11 @@ import Card from "./Card.vue"
 
 </svg>
     <div class="nav">
+      <router-link to="/home">Home</router-link>
       <router-link to="/contact">Contact</router-link>
       <router-link to="/about">About</router-link>
-      <router-link to="/home">Home</router-link></div>
+      <router-link to="/funfacts">Fun Facts</router-link>
+    </div>
 <div class="card-grid">
     <div class="cards">
       <card
@@ -56,10 +58,13 @@ import Card from "./Card.vue"
   div.cards {
     display: flex;
     flex-direction: column;
-    gap: 1rem;
     font-family: Aegean sans-serif;
-
-
+    scale:.5;
+    gap:10rem;
+  }
+  div.card-grid{
+    display: flex;
+    flex-direction: column;
   }
 
   h1 {
@@ -71,23 +76,21 @@ import Card from "./Card.vue"
     font-family: "American Typewriter", serif;
     font-size: 3rem;
     color: white;
-    margin-right: 200px;
-    padding-left:15rem;
-
+  }
     aside {
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
     }
-  }
+
 
   div.nav{
+    padding-top: 5rem;
     display: flex;
     flex-direction:column;
     align-items: center;
     justify-content: center;
-    gap: 1rem;
-    padding-bottom:5rem;
+    gap: 5rem;
   }
 
 
@@ -98,7 +101,6 @@ import Card from "./Card.vue"
     margin-top: 2rem;
     border: lightgrey solid 3px;
     border-radius: 10px;
-    padding: 20px;
     font-size: 2rem;
     color: white;
   }
@@ -118,17 +120,17 @@ import Card from "./Card.vue"
     flex-direction:column;
     justify-content: center;
     align-items: center;
-    padding-left:30rem;
-    padding-bottom:5rem;
+    padding-left:27rem;
+    padding-bottom:10rem;
   }
   div.nav {
     display: flex;
     flex-direction: row;
+    align-content: center;
     scale:1;
     gap: 5rem;
     padding-bottom: 5rem;
-    align-content: center;
-  padding-left:15rem;}
+  padding-left:5rem;}
 
 
 
@@ -150,7 +152,7 @@ import Card from "./Card.vue"
     font-family: "American Typewriter", serif;
     font-size: 10rem;
     color: white;
-
+  }
 
 
     aside {
@@ -175,7 +177,7 @@ import Card from "./Card.vue"
   a:hover {
     color: green;
   }
-}
+
 
 
 </style>

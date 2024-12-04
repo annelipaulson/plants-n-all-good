@@ -20,9 +20,10 @@ import PrimaryTemplate from "../Templates/PrimaryTemplate.vue";
 
     </svg>
     <div class="nav">
+      <router-link to="/home">Home</router-link>
       <router-link to="/contact">Contact</router-link>
       <router-link to="/about">About</router-link>
-      <router-link to="/home">Home</router-link></div>
+      <router-link to="/funfacts">Fun Facts</router-link></div>
 <div class="about-content">
 
 
@@ -57,8 +58,10 @@ import PrimaryTemplate from "../Templates/PrimaryTemplate.vue";
     align-items: center;
     padding-left:130px;
     padding-right:130px;
+    padding-bottom: 5rem;
   }
   div.nav{
+    padding-top:5rem;
     display: flex;
     flex-direction:column;
     gap: 1rem;
@@ -67,12 +70,14 @@ import PrimaryTemplate from "../Templates/PrimaryTemplate.vue";
   }
 
   h1 {
-    margin: 50px;
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
+    text-align: center;
     justify-content: center;
     font-family: "American Typewriter", serif;
-    font-size: 5rem;
+    font-size: 3rem;
+    color: white;
   }
 
   div.about-content h3 {
@@ -105,13 +110,13 @@ import PrimaryTemplate from "../Templates/PrimaryTemplate.vue";
     flex-direction: column;
     justify-content: center;
     background-color: white;
-    padding: 5rem;
+    padding: 7rem;
   }
   div.about-content p{
     text-align: left;
     color: black;
     font-family: futura serif;
-    font-size:2rem;
+    font-size:1rem;
   }
 }
 
@@ -139,10 +144,12 @@ import PrimaryTemplate from "../Templates/PrimaryTemplate.vue";
   div.nav {
     display: flex;
     flex-direction: row;
-    scale:1;
-    gap: 5rem;
+    align-items: center;
+    justify-content: center;
+    padding-right:5rem;
     padding-bottom: 5rem;
-    align-content: center;}
+  }
+
 
   div.about-content h3 {
     display: flex;
