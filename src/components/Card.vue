@@ -37,12 +37,11 @@ plantCare: {
     border: lightgrey solid 3px;
     border-radius: 10px;
     padding-left: 2.5rem;
+    padding-right: 2.5rem;
     padding-bottom: 2.5rem;
     justify-content: center;
     align-items: center;
     min-height: 40px;
-    margin-left: 3.5rem;
-    margin-right: 10rem;
     margin-top: 2rem;
 
   }
@@ -58,7 +57,6 @@ plantCare: {
   section.cards {
     display: flex;
     align-items: center;
-    width: 100%;
 
   }
 
@@ -99,7 +97,7 @@ plantCare: {
     align-items: center;
     min-height: 40px;
     margin-left: 3.5rem;
-    margin-right: 10rem;
+    margin-right: 3.5rem;
     margin-top: 2rem;
 
 

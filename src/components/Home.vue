@@ -84,8 +84,9 @@ import Card from "./Card.vue"
   div.nav{
     display: flex;
     flex-direction:column;
+    align-items: center;
+    justify-content: center;
     gap: 1rem;
-    padding-left:15rem;
     padding-bottom:5rem;
   }
 
@@ -94,7 +95,6 @@ import Card from "./Card.vue"
     display: flex;
     flex-wrap: nowrap;
     background-color: sandybrown;
-    margin-right: 15rem;
     margin-top: 2rem;
     border: lightgrey solid 3px;
     border-radius: 10px;
@@ -113,20 +113,23 @@ import Card from "./Card.vue"
     display: flex;
     flex-direction: row;
   }
-svg{
-  display:flex;
-  flex-direction: row;
-  align-items: center;
-  padding-bottom: 5rem;
-  padding-left: 30rem;
-}
-div.nav {
-  display: flex;
-  flex-direction: row;
-  scale:1;
-  padding-left:15rem;
-gap: 5rem;
-padding-bottom: 5rem;}
+  svg{
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    padding-left:30rem;
+    padding-bottom:5rem;
+  }
+  div.nav {
+    display: flex;
+    flex-direction: row;
+    scale:1;
+    gap: 5rem;
+    padding-bottom: 5rem;
+    align-content: center;
+  padding-left:15rem;}
+
 
 
   div.cards {

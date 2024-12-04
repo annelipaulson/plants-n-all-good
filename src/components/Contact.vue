@@ -134,8 +134,9 @@ import PrimaryTemplate from "../Templates/PrimaryTemplate.vue";
     display: flex;
     flex-direction:column;
     gap: 1rem;
-    padding-right:15rem;
+    padding-right:10rem;
     padding-bottom:5rem;
+
   }
 
   h1 {
@@ -199,18 +200,19 @@ div.contact-content p{
   }
   div.contact-content {
     display:flex;
-
+align-content: center;
     flex-direction: column;
     background-color: white;
-    padding: 40px;
+    padding: 10px;
     font-size: 2rem;
   }
   div.nav {
     display: flex;
     flex-direction: row;
     scale:1;
-    padding-left:10rem;}
-
+    gap: 5rem;
+    padding-bottom: 5rem;
+    align-content: center;}
 
   div.contact-content h3 {
     display: flex;

@@ -8,7 +8,7 @@ import PrimaryTemplate from "../Templates/PrimaryTemplate.vue";
     <h1> About Us!</h1>
 
     <!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
-    <svg fill="#ffffff" width="200px" height="200px" viewBox="0 -0.06 33.834 33.834" xmlns="http://www.w3.org/2000/svg">
+    <svg fill="#ffffff" width="300px" height="300px" viewBox="0 -0.06 33.834 33.834" xmlns="http://www.w3.org/2000/svg">
 
       <g transform="translate(-95.748 -577)">
 
@@ -24,7 +24,6 @@ import PrimaryTemplate from "../Templates/PrimaryTemplate.vue";
       <router-link to="/about">About</router-link>
       <router-link to="/home">Home</router-link></div>
 <div class="about-content">
-  <h3>Welcome to Plants & All</h3>
 
 
   <p>We're a passionate community of plant enthusiasts dedicated to helping people transform their spaces into lush, green sanctuaries.
@@ -101,19 +100,21 @@ import PrimaryTemplate from "../Templates/PrimaryTemplate.vue";
 
 
   div.about-content {
-    padding:3rem;
+
     display: flex;
     flex-direction: column;
     justify-content: center;
     background-color: white;
+    padding: 5rem;
   }
   div.about-content p{
     text-align: left;
     color: black;
     font-family: futura serif;
-    font-size: 2rem;
+    font-size:2rem;
   }
 }
+
 
 
 
@@ -121,37 +122,36 @@ import PrimaryTemplate from "../Templates/PrimaryTemplate.vue";
 @media (width >= 500px) {
   svg{
     display:flex;
-    flex-direction: row;
+    flex-direction:row;
+    justify-content: center;
     align-items: center;
-    padding-top: 5rem;
     padding-left:30rem;
-    padding-bottom: 5rem;
+    padding-bottom:5rem;
   }
   div.about-content {
-    display: flex;
+    display:flex;
+    align-content: center;
     flex-direction: column;
     background-color: white;
-    font-size: 1.5rem;
+    padding: 10px;
+    font-size: 2rem;
   }
-
   div.nav {
     display: flex;
     flex-direction: row;
-    scale: 1;
-    padding-left:20rem;
-    padding-right:25rem;
-    gap:5rem;
-    padding-bottom:20px;
-  }
-
+    scale:1;
+    gap: 5rem;
+    padding-bottom: 5rem;
+    align-content: center;}
 
   div.about-content h3 {
     display: flex;
     flex-direction: column;
     text-align: center;
     font-family: "American Typewriter", serif;
-    font-size: 3rem;
+    font-size: 1.5rem;
     color: black;
+    padding:5rem;
   }
 
   div.about-content p {
@@ -161,21 +161,22 @@ import PrimaryTemplate from "../Templates/PrimaryTemplate.vue";
     background-color: white;
     font-family: futura sans-serif;
     color: black;
-    font-size: 1.5rem;
+    padding:5rem;
+    font-size:1.5rem;
+
   }
 
   h1 {
     display: flex;
     text-align: center;
     padding-left: 150px;
-    padding-right: 20rem;
     border-bottom: lightgrey solid 3px;
     padding-top: 30px;
     flex-direction: row;
     justify-content: center;
     font-family: American typewriter, serif;
-    font-size: 2rem;
-    color: white;
+    font-size: 5rem;
+    color:white;
   }
 
   a {
@@ -183,13 +184,19 @@ import PrimaryTemplate from "../Templates/PrimaryTemplate.vue";
     flex-wrap: wrap;
     flex-direction: row;
     background-color: sandybrown;
+    margin-left: 10rem;
+    margin-bottom:5rem;
     margin-top: 2rem;
     border: lightgrey solid 3px;
     border-radius: 10px;
     padding: 20px;
-    font-size: 1.5rem;
+    font-size: 2rem;
     color: white;
-    font-family: "American Typewriter", serif;
   }
+
+
 }
+
+
+
 </style>
