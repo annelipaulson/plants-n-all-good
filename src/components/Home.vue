@@ -22,24 +22,40 @@ import Card from "./Card.vue"
       <router-link to="/contact">Contact</router-link>
       <router-link to="/about">About</router-link>
       <router-link to="/funfacts">Fun Facts</router-link>
+      <router-link to="/plant">Plant Care</router-link>
     </div>
 <div class="card-grid">
     <div class="cards">
       <card
-          plant-name="The Monstera Plant"
-          plant-care="Moderate"
-          plant-region="Desert"
+          plant-name="Plant Name: The Monstera Plant"
+          plant-care="Plant Care Level: Moderate"
+          plant-region="Plant Region: Tropical Forests - Central America"
       />
       <card
-          plant-name="The Aloe Vera Plant"
-          plant-care="Moderate"
-          plant-region="Desert"
+          plant-name="Plant Name: The Aloe Vera Plant"
+          plant-care="Plant Care Level:Easy"
+          plant-region="Plant Region: Arabian Peninsula"
       />
       <card
-          plant-name="The Money Tree"
-          plant-care="Moderate"
-          plant-region="Desert"
+          plant-name="Plant Name:The Money Tree"
+          plant-care="Plant Care Level: Delicate"
+          plant-region="Plant Region: Tropical Forests - Central America"
       />
+      <card
+        plant-name="The Snake Plant"
+        plant-care="Easy"
+        plant-region="Africa and Asia"
+        />
+      <card
+        plant-name="The Spider Plant"
+        plant-care="Easy"
+        plant-region="ropical and southern Africa"
+        />
+      <card
+        plant-name="The Pothos Plant"
+        plant-care="Easy"
+        plant-region="Southeast Asia to the western Pacific"
+        />
 
 
     </div></div>
@@ -51,26 +67,28 @@ import Card from "./Card.vue"
   svg{
     display:flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
-    padding-left:130px;
-    padding-right:130px;
+    padding-right:10rem;
   }
   div.cards {
     display: flex;
     flex-direction: column;
     font-family: Aegean sans-serif;
-    scale:.5;
+    scale:.75;
     gap:10rem;
   }
   div.card-grid{
     display: flex;
     flex-direction: column;
+    flex-flow:column wrap;
   }
 
   h1 {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     flex-direction: column;
+    align-content: center;
     text-align: center;
     justify-content: center;
     font-family: "American Typewriter", serif;
@@ -86,7 +104,9 @@ import Card from "./Card.vue"
 
   div.nav{
     padding-top: 5rem;
+    padding-left:5rem;
     display: flex;
+    flex-wrap:nowrap;
     flex-direction:column;
     align-items: center;
     justify-content: center;
@@ -97,7 +117,7 @@ import Card from "./Card.vue"
   a {
     display: flex;
     flex-wrap: nowrap;
-    background-color: sandybrown;
+    background-color: #00693e;
     margin-top: 2rem;
     border: lightgrey solid 3px;
     border-radius: 10px;
@@ -107,10 +127,11 @@ import Card from "./Card.vue"
 
   a:hover {
     color: green;
+    background-color: white;
   }
 }
 
-@media (width >= 500px) {
+@media (width >= 700px) {
   div.card-grid{
     display: flex;
     flex-direction: row;
@@ -125,21 +146,28 @@ import Card from "./Card.vue"
   }
   div.nav {
     display: flex;
+    flex-wrap:wrap;
     flex-direction: row;
+    justify-content: center;
     align-content: center;
     scale:1;
     gap: 5rem;
-    padding-bottom: 5rem;
-  padding-left:5rem;}
-
+    padding:2rem;}
 
 
   div.cards {
     display: flex;
-    flex-direction: row;
+    flex-flow:row wrap;
     font-family: Aegean sans-serif;
     gap: 1rem;
 
+
+  }
+  div.card-grid{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    flex-flow:row wrap;
 
   }
 
@@ -166,7 +194,7 @@ import Card from "./Card.vue"
   a {
     display: flex;
     flex-direction: row;
-    background-color: sandybrown;
+    background-color: #00693e;;
     border: lightgrey solid 3px;
     border-radius: 10px;
     font-size: 3rem;
@@ -176,6 +204,7 @@ import Card from "./Card.vue"
 
   a:hover {
     color: green;
+    background-color: white;
   }
 
 

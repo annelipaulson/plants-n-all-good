@@ -7,7 +7,12 @@ defineProps({
   },
 plantCare: {
     type: String,
-    required: true,}
+    required: true,},
+  plantRegion:{
+    type: String,
+    required: true,
+  }
+
 
 
 })
@@ -19,7 +24,8 @@ plantCare: {
       <aside>
         <p class="plantName">{{ plantName }}</p>
           <p class="plantCare">{{ plantCare }}</p>
-          <router-link to="/plant">Learn More!</router-link>
+        <p class="plantRegion">{{plantRegion}}</p>
+         <br> <router-link to="/plant">Click Here for More Plant Care Information</router-link>
       </aside>
     </section>
   </primary-template>
@@ -33,7 +39,7 @@ plantCare: {
     display: flex;
     flex-wrap: wrap;
     text-align: center;
-    background-color: #213547;
+    background-color: #00693e;;
     border: lightgrey solid 3px;
     border-radius: 10px;
     padding-left: 2.5rem;
@@ -44,6 +50,10 @@ plantCare: {
     min-height: 40px;
     margin-top: 2rem;
 
+  }
+  aside:hover {
+    color: white;
+    background-color: white;
   }
 
   a {
@@ -60,9 +70,6 @@ plantCare: {
 
   }
 
-  aside:hover {
-    border: yellow dashed 4px;
-  }
 
   p {
     display: flex;
@@ -83,24 +90,29 @@ plantCare: {
   }
 }
 
-@media (width >= 500px) {
+@media (width >= 700px) {
   aside {
     display: flex;
     flex-wrap: wrap;
     text-align: center;
-    background-color: #213547;
+    background-color: #00693e;
     border: lightgrey solid 3px;
     border-radius: 10px;
     padding-left: 2.5rem;
-    padding-bottom: 2.5rem;
+    padding-bottom: 5rem;
     justify-content: center;
     align-items: center;
     min-height: 40px;
     margin-left: 3.5rem;
     margin-right: 3.5rem;
     margin-top: 2rem;
+    margin-bottom: 5rem;
 
 
+  }
+  aside:hover {
+    color: white;
+    background-color: lightgrey;
   }
 
   a {
@@ -110,10 +122,6 @@ plantCare: {
     padding-right: 2rem;
   }
 
-
-  aside:hover {
-    border: yellow dashed 4px;
-  }
 
   p {
     display: flex;

@@ -91,7 +91,8 @@ import PrimaryTemplate from "../Templates/PrimaryTemplate.vue";
       <router-link to="/home">Home</router-link>
       <router-link to="/contact">Contact</router-link>
       <router-link to="/about">About</router-link>
-      <router-link to="/funfacts">Fun Facts</router-link></div>
+      <router-link to="/funfacts">Fun Facts</router-link>
+      <router-link to="/plant">Plant Care</router-link></div>
 </primary-template>
     <div class="contact-content">
       <h3>We're here to help you with all your plant-related needs! Whether you have questions about plant care, need help with an order, or want to give us feedback, our team at Plants & All the is ready to assist.</h3>
@@ -127,8 +128,9 @@ import PrimaryTemplate from "../Templates/PrimaryTemplate.vue";
   svg{
     display:flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
-    padding-left:150px;
+    padding-right:10rem;
   }
 
   h1 {
@@ -152,33 +154,34 @@ import PrimaryTemplate from "../Templates/PrimaryTemplate.vue";
   }
 
   div.nav{
-    padding-top:5rem;
+    padding-top: 5rem;
+    padding-left:5rem;
     display: flex;
+    flex-wrap:nowrap;
     flex-direction:column;
     align-items: center;
     justify-content: center;
-    gap: 1rem;
-    padding-bottom: 5rem;
+    gap: 5rem;
   }
+
 
   a {
     display: flex;
     flex-wrap: nowrap;
-    background-color: sandybrown;
+    background-color: #00693e;
     margin-top: 2rem;
     border: lightgrey solid 3px;
     border-radius: 10px;
-    padding: 20px;
     font-size: 2rem;
     color: white;
   }
 
+
   a:hover {
-    color: green;
+      color: green;
+      background-color: white;
+    }
   }
-}
-
-
 
 div.contact-content {
     display: flex;
@@ -200,7 +203,7 @@ div.contact-content p{
 
 
 
-@media (width >= 500px) {
+@media (width >= 700px) {
   svg{
     display:flex;
     flex-direction:row;
@@ -217,14 +220,14 @@ align-content: center;
     padding: 10px;
     font-size: 2rem;
   }
-  div.nav {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    padding-right:5rem;
-    padding-bottom: 5rem;
-   }
+    div.nav {
+      display: flex;
+      flex-direction: row;
+      flex-wrap:wrap;
+      justify-content: center;
+      align-content: center;
+      gap: 5rem;
+      padding:2rem;}
 
   div.contact-content h3 {
     display: flex;
@@ -251,7 +254,6 @@ padding:5rem;
   h1 {
     display: flex;
     text-align: center;
-    padding-left: 150px;
     border-bottom: lightgrey solid 3px;
     padding-top: 30px;
     flex-direction: row;
@@ -265,7 +267,7 @@ padding:5rem;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    background-color: sandybrown;
+    background-color: #00693e;;
     margin-left: 10rem;
     margin-bottom:5rem;
     margin-top: 2rem;
@@ -274,6 +276,10 @@ padding:5rem;
     padding: 20px;
     font-size: 2rem;
     color: white;
+  }
+  a:hover {
+    color: green;
+    background-color: white;
   }
 
 

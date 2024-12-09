@@ -23,7 +23,8 @@ import PrimaryTemplate from "../Templates/PrimaryTemplate.vue";
       <router-link to="/home">Home</router-link>
       <router-link to="/contact">Contact</router-link>
       <router-link to="/about">About</router-link>
-      <router-link to="/funfacts">Fun Facts</router-link></div>
+      <router-link to="/funfacts">Fun Facts</router-link>
+      <router-link to="/plant">Plant Care</router-link></div>
 <div class="about-content">
 
 
@@ -55,19 +56,22 @@ import PrimaryTemplate from "../Templates/PrimaryTemplate.vue";
   svg{
     display:flex;
     flex-direction: column;
-    align-items: center;
-    padding-left:130px;
-    padding-right:130px;
-    padding-bottom: 5rem;
+    justify-content: center;
+    padding-right:10rem;
   }
-  div.nav{
-    padding-top:5rem;
-    display: flex;
-    flex-direction:column;
-    gap: 1rem;
-    padding-right:15rem;
-    padding-bottom:5rem;
-  }
+    div.nav{
+      padding-top: 5rem;
+      padding-left:5rem;
+      display: flex;
+      flex-wrap:nowrap;
+      flex-direction:column;
+      align-items: center;
+      justify-content: center;
+      gap: 5rem;
+    }
+
+
+
 
   h1 {
     display: flex;
@@ -93,7 +97,7 @@ import PrimaryTemplate from "../Templates/PrimaryTemplate.vue";
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: sandybrown;
+    background-color: #00693e;;
     margin-left: 10rem;
     margin-top: 2rem;
     border: lightgrey solid 3px;
@@ -101,6 +105,10 @@ import PrimaryTemplate from "../Templates/PrimaryTemplate.vue";
     padding: 20px;
     font-size: 2rem;
     color: white;
+  }
+  a:hover {
+    color: green;
+    background-color: white;
   }
 
 
@@ -124,7 +132,7 @@ import PrimaryTemplate from "../Templates/PrimaryTemplate.vue";
 
 
 
-@media (width >= 500px) {
+@media (width >= 700px) {
   svg{
     display:flex;
     flex-direction:row;
@@ -138,17 +146,17 @@ import PrimaryTemplate from "../Templates/PrimaryTemplate.vue";
     align-content: center;
     flex-direction: column;
     background-color: white;
-    padding: 10px;
     font-size: 2rem;
   }
   div.nav {
     display: flex;
+    flex-wrap:wrap;
     flex-direction: row;
-    align-items: center;
     justify-content: center;
-    padding-right:5rem;
-    padding-bottom: 5rem;
-  }
+    align-content: center;
+    scale:1;
+    gap: 5rem;
+    padding:2rem;}
 
 
   div.about-content h3 {
@@ -158,7 +166,6 @@ import PrimaryTemplate from "../Templates/PrimaryTemplate.vue";
     font-family: "American Typewriter", serif;
     font-size: 1.5rem;
     color: black;
-    padding:5rem;
   }
 
   div.about-content p {
@@ -176,7 +183,6 @@ import PrimaryTemplate from "../Templates/PrimaryTemplate.vue";
   h1 {
     display: flex;
     text-align: center;
-    padding-left: 150px;
     border-bottom: lightgrey solid 3px;
     padding-top: 30px;
     flex-direction: row;
@@ -190,8 +196,7 @@ import PrimaryTemplate from "../Templates/PrimaryTemplate.vue";
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    background-color: sandybrown;
-    margin-left: 10rem;
+    background-color:#00693e;
     margin-bottom:5rem;
     margin-top: 2rem;
     border: lightgrey solid 3px;
@@ -199,6 +204,10 @@ import PrimaryTemplate from "../Templates/PrimaryTemplate.vue";
     padding: 20px;
     font-size: 2rem;
     color: white;
+  }
+  a:hover {
+    color: green;
+    background-color: white;
   }
 
 
